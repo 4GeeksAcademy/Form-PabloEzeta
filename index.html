@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap HTML FORM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card w-75 mx-auto my-5">
+      <!-- title -->
+      <div class="header-title">
+        <h2>Payment form example</h2>
+      </div>
+
+      <!-- Data Card-->
+      <!-- Alert -->
+      <div class="alert alert-danger" role="alert">Some fields are missing</div>
+
+      <!-- Card Numbers -->
+      <div class="input-group mb-3">
+        <label for="fname">Card #</label>
+        <input type="numeric" min="1" max="16" placeholder="xxxxxxxxxx" />
+        <br />
+
+        <div class="col">
+          <label for="fname">CVC#</label>
+          <input type="numeric" placeholder="0000" />
+          <br />
+        </div>
+
+        <div class="col">
+          <label for="fname">Amount</label>
+          <span><i class="fa-regular fa-user"></i></span>
+          <input type="numeric" placeholder="Amount" />
+        </div>
+      </div>
+      <br />
+
+      <!-- Data person-->
+      <div class="container text-center">
+        <div class="row justify-content-start">
+          <!-- left part -->
+          <div>
+            <!-- Name, city, accept -->
+            <div class="col-4">
+              <label for="fname">First name:</label>
+              <input type="text" placeholder="Juan" />
+              <br />
+              <div class="col-4">
+                <label for="fname">City</label>
+                <input type="text" placeholder="Mexico city" />
+                <br />
+              </div>
+
+              <p>We Accept:</p>
+              <div>icono icono icono</div>
+            </div>
+
+            <!-- Right part -->
+            <div class="col-4">
+              <!-- Last name, State, CP, Message -->
+              <label for="fname">Last name:</label>
+              <input type="text" placeholder="Perez" />
+              <br />
+
+              <label for="fname">State</label>
+              <input type="text" placeholder="Pick a state" />
+              <br />
+
+              <label for="fname">Postal Code</label>
+              <input type="number" placeholder="0000" />
+              <br />
+
+              <label for="fname">Message</label>
+              <input type="text" />
+              <br />
+              <p>add any notes here.</p>
+            </div>
+          </div>
+
+          <!-- Foot part  -->
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-auto me-auto">
+                <a
+                  class="btn btn-secondary disabled"
+                  role="button"
+                  aria-disabled="true"
+                  >Cancel</a
+                >
+                <a
+                  class="btn btn-primary disabled"
+                  role="button"
+                  aria-disabled="true"
+                  >Send</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

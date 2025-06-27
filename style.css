@@ -1,7 +1,35 @@
-.header-title {
-  background-color: rgb(223, 221, 221);
-}
-
 .card {
-  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 1.5rem;
+}
+.card-body {
+  padding: 1.5rem;
+}
+.form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+.payment-icons {
+  background-color: #6c757d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.payment-icons i {
+  color: white;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.btn-group-custom {
+  margin-top: 2rem;
 }
